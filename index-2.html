@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Roadster Loop</title>
+<meta name="description" content="Roadster Loop: a night-time ramp stunt game with a sleek electric sports car. Launch on green, ride the quarter-pipe, fly, spin and land.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+  <canvas id="c"></canvas>
+
+  <div id="hud">
+    <div class="hud-box" id="hud-left">
+      <div class="hud-label">SCORE</div>
+      <div class="hud-big" id="score">0</div>
+      <div class="hud-small">Rings <span id="rings">0</span>/6</div>
+    </div>
+    <div class="hud-box" id="hud-right">
+      <div class="hud-label">SPEED</div>
+      <div class="hud-big"><span id="speed">0</span> <small>mph</small></div>
+      <div class="hud-small">Height <span id="alt">0</span> m</div>
+    </div>
+  </div>
+
+  <div id="lights" aria-label="Start lights">
+    <div class="light" id="l0"></div>
+    <div class="light" id="l1"></div>
+    <div class="light" id="l2"></div>
+    <div class="light" id="l3"></div>
+  </div>
+
+  <div id="message"></div>
+
+  <div id="gas">
+    <div class="hud-label">GAS</div>
+    <div id="gas-track"><div id="gas-fill"></div></div>
+  </div>
+
+  <button id="btnLeft" class="touch-btn" aria-label="Rotate left">&#9664;</button>
+  <button id="btnRight" class="touch-btn" aria-label="Rotate right">&#9654;</button>
+
+  <div id="panel"></div>
+</div>
+
+<footer id="footer">
+  <span>Unofficial fan game, not affiliated with Tesla.</span>
+  <a href="privacy.html">Privacy</a>
+</footer>
+
+<noscript><p style="color:#fff;padding:2rem">Roadster Loop needs JavaScript and WebGL.</p></noscript>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
