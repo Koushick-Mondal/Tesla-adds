@@ -1,0 +1,5 @@
+# ads.txt for Roadster Loop
+# No ad network is configured yet. When you join one, replace the example line below
+# with the line your network gives you (format: domain, publisher ID, relationship, certification authority ID).
+# Example (do not use as-is):
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
